@@ -40,14 +40,14 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="DpL-fy-D7j">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PokeCell" id="DpL-fy-D7j" customClass="PokeCell" customModule="pokedex3" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="105" height="106"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="105" height="106"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="4" translatesAutoresizingMaskIntoConstraints="NO" id="wzv-LY-QIb">
+                                                <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="4" translatesAutoresizingMaskIntoConstraints="NO" id="wzv-LY-QIb">
                                                     <frame key="frameInset" width="105" height="92"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Charmander" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pxm-4G-0nl">
@@ -64,6 +64,10 @@
                                             <constraint firstAttribute="bottom" secondItem="Pxm-4G-0nl" secondAttribute="bottom" id="wn5-Vc-DEw"/>
                                             <constraint firstAttribute="trailing" secondItem="Pxm-4G-0nl" secondAttribute="trailing" id="yC6-EI-t2W"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="nameLbl" destination="Pxm-4G-0nl" id="9on-TW-abW"/>
+                                            <outlet property="thumbImg" destination="wzv-LY-QIb" id="aJ8-2R-KcC"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
