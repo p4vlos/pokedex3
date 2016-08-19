@@ -27,7 +27,7 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pokedex" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pGA-8n-Wf7">
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="2JL-ba-FtY"/>
+                                            <constraint firstAttribute="height" constant="30" id="2JL-ba-FtY"/>
                                             <constraint firstAttribute="width" constant="128" id="ssQ-X6-Lc2"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="PokemonSolidNormal" family="Pokemon Solid" pointSize="24"/>
@@ -54,7 +54,7 @@
                                     <constraint firstAttribute="bottom" secondItem="pGA-8n-Wf7" secondAttribute="bottom" constant="8" id="yWe-3U-m6L"/>
                                 </constraints>
                             </view>
-                            <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="sHp-sA-1Md">
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Search Pokemon" translatesAutoresizingMaskIntoConstraints="NO" id="sHp-sA-1Md">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="fwS-EU-awr"/>
                                 </constraints>
@@ -127,6 +127,7 @@
                     </view>
                     <connections>
                         <outlet property="collection" destination="fYH-xX-eZ2" id="o1n-Cz-dBy"/>
+                        <outlet property="searchBar" destination="sHp-sA-1Md" id="luh-zq-EVv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
