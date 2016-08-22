@@ -1,5 +1,5 @@
 # Uncomment this line to define a global platform for your project
-#platform :ios, '9.0'
+platform :ios, '9.0'
 
 target 'pokedex3' do
   # Comment this line if you're not using Swift and don't want to use dynamic frameworks
@@ -7,7 +7,7 @@ target 'pokedex3' do
 
   # Pods for pokedex3
   pod 'Alamofire',
-  :git => 'https://github.com/Alamofire/Alamofire.git',
-  :branch => 'swift3'
+  	:git => 'https://github.com/Alamofire/Alamofire.git',
+  	:branch => 'swift3'
 
 end
